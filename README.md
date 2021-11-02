@@ -121,15 +121,15 @@ the response to every client connected on the websocket.
 
 ## How to test
 
-Install git on your machine.
-Execute below command in a terminal.
+Install git on your machine.  
+Execute below command in a terminal.  
 `git clone https://github.com/brshiels/powerplant-coding-challenge`
 
-Install docker on your machine.
-Open terminal.
-Go to `powerplant-coding-challenge\powerplant`
-Execute below command.
-`docker build --pull -t powerplant .`
+Install docker on your machine.\
+Open terminal.\
+Go to `powerplant-coding-challenge\powerplant`\
+Execute below command.\
+`docker build --pull -t powerplant .`\
 `docker run --rm -it -p 8888:8888 powerplant`
 
 Install Postman on your machine.
