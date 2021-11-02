@@ -133,7 +133,7 @@ Execute below command.\
 `docker run --rm -it -p 8888:8888 powerplant`
 
 Install Postman on your machine.\
-Import the provided Postman collection `powerplant.postman_collection.json`.\
+Import the provided Postman collection `powerplant.postman_collection.json`\
 Modify request body.\
 Click on send.\
 Receive reply.
