@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "3d5314a6-233e-441a-ada6-5c412d6dabfb",
+		"name": "powerplant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "productionplan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"load\": 480,\r\n    \"fuels\":\r\n    {\r\n      \"gas(euro/MWh)\": 13.4,\r\n      \"kerosine(euro/MWh)\": 50.8,\r\n      \"co2(euro/ton)\": 20,\r\n      \"wind(%)\": 60\r\n    },\r\n    \"powerplants\": [\r\n      {\r\n        \"name\": \"gasfiredbig1\",\r\n        \"type\": \"gasfired\",\r\n        \"efficiency\": 0.53,\r\n        \"pmin\": 100,\r\n        \"pmax\": 460\r\n      },\r\n      {\r\n        \"name\": \"gasfiredbig2\",\r\n        \"type\": \"gasfired\",\r\n        \"efficiency\": 0.53,\r\n        \"pmin\": 100,\r\n        \"pmax\": 460\r\n      },\r\n      {\r\n        \"name\": \"gasfiredsomewhatsmaller\",\r\n        \"type\": \"gasfired\",\r\n        \"efficiency\": 0.37,\r\n        \"pmin\": 40,\r\n        \"pmax\": 210\r\n      },\r\n      {\r\n        \"name\": \"tj1\",\r\n        \"type\": \"turbojet\",\r\n        \"efficiency\": 0.3,\r\n        \"pmin\": 0,\r\n        \"pmax\": 16\r\n      },\r\n      {\r\n        \"name\": \"windpark1\",\r\n        \"type\": \"windturbine\",\r\n        \"efficiency\": 1,\r\n        \"pmin\": 0,\r\n        \"pmax\": 150\r\n      },\r\n      {\r\n        \"name\": \"windpark2\",\r\n        \"type\": \"windturbine\",\r\n        \"efficiency\": 1,\r\n        \"pmin\": 0,\r\n        \"pmax\": 36\r\n      }\r\n    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8888/api/powerplant/productionplan"
+			},
+			"response": []
+		}
+	]
+}

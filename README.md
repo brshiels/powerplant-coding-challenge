@@ -119,6 +119,25 @@ For this challenge, you may take into account that each MWh generated creates 0.
 Provide a websocket server connection that will emit after every post the input of the POST together with
 the response to every client connected on the websocket.
 
+## How to test
+
+Install git on your machine.
+Execute below command in a terminal.
+`git clone https://github.com/brshiels/powerplant-coding-challenge`
+
+Install docker on your machine.
+Open terminal.
+Go to `powerplant-coding-challenge\powerplant`
+Execute below command.
+`docker build --pull -t powerplant .`
+`docker run --rm -it -p 8888:8888 powerplant`
+
+Install Postman on your machine.
+Import the provided Postman collection `powerplant.postman_collection.json`.
+Modify request body.
+Click on send.
+Receive reply.
+
 ## Acceptance criteria
 
 For a submission to be reviewed as part of an application for a position in the team, the project
